@@ -8,7 +8,7 @@ from openai.types.responses import ResponseTextDeltaEvent
 
 load_dotenv(find_dotenv())
 
-gemini_api_key = os.getenv("GOOGLE_API_KEY")
+gemini_api_key = os.getenv("OPENAI_API_KEY")
 
 client = AsyncOpenAI(
     api_key=gemini_api_key,
